@@ -1,0 +1,20 @@
+{% extends "tienda/base.html" %}
+{% load static %}
+{% block title %}Weiner Kingdom | Product{% endblock %}
+{% block content %}
+<section class="detail">
+{% if producto %}
+    <img src="{% static producto.imagen %}" alt="{{ producto.nombre }}">
+    <div>
+        <p class="eyebrow">WEINER KINGDOM</p>
+        <h1>{{ producto.nombre }}</h1>
+        <p class="detail-price">{{ producto.precio }}</p>
+        <p>{{ producto.descripcion }}</p>
+        <a class="button" href="{% url 'productos' %}">Back to Products</a>
+    </div>
+{% else %}
+    <h1>Product not found</h1>
+    <a class="button" href="{% url 'productos' %}">Back to Products</a>
+{% endif %}
+</section>
+{% endblock %}
