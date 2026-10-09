@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # macOS
 .DS_Store
 
@@ -24,3 +25,26 @@ media/
 # Archivos de desarrollo
 .pytest_cache/
 .mypy_cache/
+=======
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+>>>>>>> a6d461a362e12fa4a66a16c843a0472ec002bf4b
