@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Secretos
+.env
+.env.*
+!.env.example
+
+# Django
+*/db.sqlite3
+db.sqlite3
+*/media/
+media/
+
+# Archivos de desarrollo
+.pytest_cache/
+.mypy_cache/
